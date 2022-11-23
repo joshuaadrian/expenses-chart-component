@@ -1,0 +1,161 @@
+// https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+$screen-xxxs-min: 0;
+$screen-xxs-min: 320px;
+$screen-xs-min: 568px;
+$screen-sm-min: 667px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+$screen-xxl-min: 1440px;
+$screen-xxxl-min: 1600px;
+
+$screen-xxxs-max: 0;
+$screen-xxs-max: 319px;
+$screen-xs-max: 567px;
+$screen-sm-max: 666px;
+$screen-md-max: 767px;
+$screen-lg-max: 991px;
+$screen-xl-max: 1199px;
+$screen-xxl-max: 1439px;
+$screen-xxxl-max: 1599px;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+/*
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
+*/
+
+//== Colors
+$white       : #ffffff;
+$black       : #000000;
+$gray-100    : hsl(30, 38%, 92%);
+$blue-200    : hsl(158, 36%, 37%);
+$blue-300    : hsl(228, 12%, 48%);
+$blue-400    : hsl(212, 21%, 14%);
+
+$colors: (
+	'white'      : $white,
+	'black'      : $black,
+	'gray-100'   : $gray-100,
+	'blue-200'   : $blue-400,
+	'blue-300'   : $blue-200,
+	'blue-400'   : $blue-400,
+);
+
+$colors-names: (
+	'white',
+	'black',
+	'gray-100',
+	'blue-200',
+	'blue-300',
+	'blue-400',
+);
+
+$colors-hover: (
+	'white'      : $white,
+	'black'      : darken($black,10%),
+	'gray-100'   : darken($gray-100,10%),
+	'blue-200'   : darken($blue-400,10%),
+	'blue-300'   : darken($blue-200,10%),
+	'blue-400'   : darken($blue-400,10%),
+);
+
+//** Background color for `<body>`.
+$body-bg: $gray-100;
+//** Global text color on `<body>`.
+$text-color:             $blue-300;
+
+//** Global textual link color.
+$link-color:            $blue-400;
+$link-decoration: underline;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      $blue-400;
+//** Link hover decoration.
+$link-hover-decoration: underline;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-headings     : "Fraunces","Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif   : "Montserrat","Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif        : Georgia, "Times New Roman", Times, serif;
+$font-family-monospace    : Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base         : $font-family-sans-serif;
+$font-size-base           : 14px;
+$font-size-large          : ceil(($font-size-base * 1.25)); // ~18px
+$font-size-small          : ceil(($font-size-base * 0.85)); // ~12px
+$font-size-h1             : calc(46px * 1.3333); // ~36px
+$font-size-h1-line-height : calc(50px * 1.3333);
+$font-size-h2             : calc(40px * 1.3333); // ~36px
+$font-size-h2-line-height : calc(44px * 1.3333);
+$font-size-h3             : calc(36px * 1.3333); // ~36px
+$font-size-h3-line-height : calc(40px * 1.3333);
+$font-size-h4             : calc(26px * 1.3333); // ~36px
+$font-size-h4-line-height : calc(28px * 1.3333);
+$font-size-h5             : calc(22px * 1.3333); // ~36px
+$font-size-h5-line-height : calc(32px * 1.3333);
+$font-size-h6             : calc(14px * 1.3333); // ~36px
+$font-size-h6-line-height : calc(19px * 1.3333);
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit;
+$headings-font-weight:    700;
+$headings-line-height:    1.2;
+$headings-color:          inherit;
