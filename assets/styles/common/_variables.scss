@@ -42,104 +42,101 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 /*
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
 ### Primary
 
-- Dark cyan: hsl(158, 36%, 37%)
-- Cream: hsl(30, 38%, 92%)
+- Soft red: hsl(10, 79%, 65%)
+- Cyan: hsl(186, 34%, 60%)
 
 ### Neutral
 
-- Very dark blue: hsl(212, 21%, 14%)
-- Dark grayish blue: hsl(228, 12%, 48%)
-- White: hsl(0, 0%, 100%)
+- Dark brown: hsl(25, 47%, 15%)
+- Medium brown: hsl(28, 10%, 53%)
+- Cream: hsl(27, 66%, 92%)
+- Very pale orange: hsl(33, 100%, 98%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (paragraph): 14px
+- Font size: 18px
 
 ### Font
 
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weights: 500, 700
-
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Weights: 400, 700
 */
 
 //== Colors
-$white       : #ffffff;
-$black       : #000000;
-$gray-100    : hsl(30, 38%, 92%);
-$blue-200    : hsl(158, 36%, 37%);
-$blue-300    : hsl(228, 12%, 48%);
-$blue-400    : hsl(212, 21%, 14%);
+$white      : #ffffff;
+$black      : #000000;
+$gray-100   : hsl(27, 66%, 92%);
+$brown-200  : hsl(28, 10%, 53%);
+$brown-400  : hsl(25, 47%, 15%);
+$red-400    : hsl(10, 79%, 65%);
+$blue-400   : hsl(186, 34%, 60%);
+$orange-100 : hsl(212, 21%, 14%);
 
 $colors: (
 	'white'      : $white,
 	'black'      : $black,
 	'gray-100'   : $gray-100,
-	'blue-200'   : $blue-400,
-	'blue-300'   : $blue-200,
+	'brown-200'  : $brown-200,
+	'brown-400'  : $brown-400,
+	'red-400'    : $red-400,
 	'blue-400'   : $blue-400,
+	'orange-100' : $orange-100
 );
 
 $colors-names: (
 	'white',
 	'black',
 	'gray-100',
-	'blue-200',
-	'blue-300',
+	'brown-200',
+	'brown-400',
+	'red-400',
 	'blue-400',
+	'orange-100'
 );
 
 $colors-hover: (
-	'white'      : $white,
+	'white'      : darken($white,10%),
 	'black'      : darken($black,10%),
 	'gray-100'   : darken($gray-100,10%),
-	'blue-200'   : darken($blue-400,10%),
-	'blue-300'   : darken($blue-200,10%),
+	'brown-200'  : darken($brown-200,10%),
+	'brown-400'  : darken($brown-400,10%),
+	'red-400'    : darken($red-400,10%),
 	'blue-400'   : darken($blue-400,10%),
+	'orange-100' : darken($orange-100,10%)
 );
 
 //** Background color for `<body>`.
 $body-bg: $gray-100;
 //** Global text color on `<body>`.
-$text-color:             $blue-300;
+$text-color:             $brown-200;
 
 //** Global textual link color.
-$link-color:            $blue-400;
+$link-color:            $brown-200;
 $link-decoration: underline;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $blue-400;
+$link-hover-color:      $brown-200;
 //** Link hover decoration.
 $link-hover-decoration: underline;
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-$font-family-headings     : "Fraunces","Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-sans-serif   : "Montserrat","Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-headings     : "DM Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif   : "DM Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif        : Georgia, "Times New Roman", Times, serif;
 $font-family-monospace    : Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base         : $font-family-sans-serif;
-$font-size-base           : 14px;
+$font-size-base           : 18px;
 $font-size-large          : ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small          : ceil(($font-size-base * 0.85)); // ~12px
-$font-size-h1             : calc(46px * 1.3333); // ~36px
-$font-size-h1-line-height : calc(50px * 1.3333);
-$font-size-h2             : calc(40px * 1.3333); // ~36px
-$font-size-h2-line-height : calc(44px * 1.3333);
+$font-size-h1             : 48px; // ~36px
+$font-size-h1-line-height : calc(36px * 1.3333);
+$font-size-h2             : 32px; // ~36px
+$font-size-h2-line-height : calc(24px * 1.3333);
 $font-size-h3             : calc(36px * 1.3333); // ~36px
 $font-size-h3-line-height : calc(40px * 1.3333);
 $font-size-h4             : calc(26px * 1.3333); // ~36px

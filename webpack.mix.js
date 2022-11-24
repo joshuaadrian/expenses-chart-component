@@ -12,6 +12,7 @@ mix.webpackConfig({
 });
 
 mix
+.js('assets/scripts/app.js', 'scripts')
 .sass('assets/styles/app.scss', 'styles')
 .polyfill({
   enabled     : true,
@@ -24,7 +25,7 @@ mix
   files : [
     '**/*.html',
     'dist/**/*.css',
-    'dist/**/*.js'
+    'assets/**/*.js'
   ]
 })
 .copyDirectory('assets/images/', 'dist/images')
