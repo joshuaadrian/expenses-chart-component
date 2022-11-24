@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	var chartData;
 
-	fetch('../../data/data.json')
+	fetch('./dist/data/data.json')
 		.then(response => response.json())
 		.then(data => {
 			chartData = data;

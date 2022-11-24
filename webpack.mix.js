@@ -29,6 +29,7 @@ mix
   ]
 })
 .copyDirectory('assets/images/', 'dist/images')
+.copyDirectory('assets/data/', 'dist/data')
 .sourceMaps()
 .options({
   processCssUrls : false,

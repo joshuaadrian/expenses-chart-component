@@ -1,9 +1,10 @@
 {
-    "/scripts/app.js": "/scripts/app.js?id=9951d237830a62389ad562bffd3601c7",
+    "/scripts/app.js": "/scripts/app.js?id=3d8c79b650738b10232fc32859668ae7",
     "/styles/app.css": "/styles/app.css?id=6f730046a976c9d22879bd3e21756330",
     "/images/favicon-32x32.png": "/images/favicon-32x32.png?id=cdba48734f66aed7957c4f16e6f5326e",
     "/images/icon-cart.svg": "/images/icon-cart.svg?id=ea61094180cd06f40a5956af5191646d",
     "/images/image-product-desktop.jpg": "/images/image-product-desktop.jpg?id=baaa86a8bc678ff47b0e2902265f31e4",
     "/images/image-product-mobile.jpg": "/images/image-product-mobile.jpg?id=4cd1ac6f34cbb076200864ba56d734ed",
-    "/images/logo.svg": "/images/logo.svg?id=db22b20eb8965a75d89a9e76f68044a3"
+    "/images/logo.svg": "/images/logo.svg?id=db22b20eb8965a75d89a9e76f68044a3",
+    "/data/data.json": "/data/data.json?id=e50eb64b54f56e77aac364c86307bc9f"
 }
